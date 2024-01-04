@@ -4,25 +4,24 @@ import {
     creator,
     web,
     javascript,
-    typescript,
     html,
     css,
     reactjs,
-    redux,
     tailwind,
     nodejs,
     mongodb,
     git,
-    figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
+    flask,
+    vue,
+    wrss,
+    python,
+    nokia,
     carrent,
-    jobit,
-    tripguide,
+    portfolio,
+    codewars,
     threejs,
+    kubernetes,
   } from "../assets";
   
   export const navLinks = [
@@ -46,7 +45,7 @@ import {
       icon: web,
     },
     {
-      title: "Vue Developer",
+      title: "VR Developer",
       icon: mobile,
     },
     {
@@ -69,20 +68,20 @@ import {
       icon: css,
     },
     {
+      name: "Python",
+      icon: python,
+    },
+    {
       name: "JavaScript",
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
+      name: "Vue",
+      icon: vue,
     },
     {
       name: "React JS",
       icon: reactjs,
-    },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
     },
     {
       name: "Tailwind CSS",
@@ -97,16 +96,20 @@ import {
       icon: mongodb,
     },
     {
+      name: "Kubernetes",
+      icon: kubernetes,
+    },
+    {
+      name: "flask",
+      icon: flask,
+    },
+    {
       name: "Three JS",
       icon: threejs,
     },
     {
       name: "git",
       icon: git,
-    },
-    {
-      name: "figma",
-      icon: figma,
     },
     {
       name: "docker",
@@ -116,85 +119,58 @@ import {
   
   const experiences = [
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "Faculty Students Council President",
+      company_name: "WRSS WEAIiIB AGH",
+      icon: wrss,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "Aug 2021 - Mar 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Coordinating a team of 37 people.",
+        "Planing and managing the organization's budget - negotiated 36% budget increase with the Faculty Dean.",
+        "Active participation in the education quality assurance system (giving opinions on study programmes, initiating and coordinating changes).",
+        "Co-organization and coordination of projects aimed at the student community - more than 60 during my whole activity.",
+        "Collaboration with more than 30 companies a.o. Nvidia, Qualtrics, Cytiva, Sabre, Assa Abloy.",
       ],
     },
     {
       title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
+      company_name: "Nokia",
+      icon: nokia,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "Oct 2021 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
+        "Developing and maintaining web applications using Vue.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
+      title: "VR Developer",
+      company_name: "Nokia",
+      icon: nokia,
       iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      date: "Mar 2023 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developing and maintaining VR application initially using Unity and then Unreal Engine and other related technologies.",
+        "Collaborating with multiple departments and developers on innovative solutions to create a tool that uses VR and AR in everyday work.",
+        "Promotion of the developed application during technology conferences and various exhibitions.",
       ],
-    },
-  ];
-  
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
   ];
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Online portfolio",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web platform on which an online cv is presented, consisting of react components, tailwinds and javascript code. It is composed of interactive 3d models prepared thanks to the threejs library and a connected email box allowing contact with the developer.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "JavaScript",
           color: "green-text-gradient",
         },
         {
@@ -202,16 +178,16 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: portfolio,
+      source_code_link: "https://github.com/IdryssPukke/OnlinePortfolio",
     },
     {
-      name: "Job IT",
+      name: "Video Analizer",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "An online application that extracts information from the streams using a scraper and then, using various microservices, analyses the image using the YOLO model in search of the specified requirements.",
       tags: [
         {
-          name: "react",
+          name: "deep learing",
           color: "blue-text-gradient",
         },
         {
@@ -219,34 +195,34 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "docker",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: carrent,
+      source_code_link: "https://github.com/IdryssPukke/video-analiser",
     },
     {
-      name: "Trip Guide",
+      name: "Code Wars",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "My solutions to challenges from the Code Wars website, written in Python, JavaScript and SQL.  They nicely show the level of my programming skills.",
       tags: [
         {
-          name: "nextjs",
+          name: "python",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "JavaScript",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "prolog",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: codewars,
+      source_code_link: "https://github.com/IdryssPukke/python",
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, projects };
