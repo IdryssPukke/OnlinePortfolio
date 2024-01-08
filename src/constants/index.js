@@ -9,7 +9,6 @@ import {
     reactjs,
     tailwind,
     nodejs,
-    mongodb,
     git,
     docker,
     flask,
@@ -90,10 +89,6 @@ import {
     {
       name: "Node JS",
       icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
     },
     {
       name: "Kubernetes",
