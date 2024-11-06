@@ -1,12 +1,20 @@
 import { BrowserRouter } from "react-router-dom";
-import { App as AntdApp} from "antd";
+import { App as AntdApp } from "antd";
 
-import { Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
+import { Hero, Navbar, StarsCanvas } from "./components";
 
 import { About } from "./components/About";
 import SectionWrapper from "./components/SectionWrapper";
+import { Contact } from "./components/Contact";
+import { Experience } from "./components/Experience";
+import { Tech } from "./components/Tech";
+import { Works } from "./components/Works";
 
-const AboutWrapper = SectionWrapper(About, "about")
+const AboutWrapper = SectionWrapper(About, "about");
+const ContactWrapper = SectionWrapper(Contact, "contact");
+const ExperienceWrapper = SectionWrapper(Experience, "experience");
+const TechWrapper = SectionWrapper(Tech, "tech");
+const WorksWrapper = SectionWrapper(Works, "work");
 
 function App() {
   return (
@@ -18,11 +26,11 @@ function App() {
             <Hero />
           </div>
           <AboutWrapper />
-          <Experience />
-          <Tech />
-          <Works />
+          <ExperienceWrapper />
+          <TechWrapper />
+          <WorksWrapper />
           <div className="relative z-0">
-            <Contact />
+            <ContactWrapper />
             <StarsCanvas />
           </div>
         </div>
