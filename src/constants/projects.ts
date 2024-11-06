@@ -1,4 +1,4 @@
-import { carrent, portfolio, codewars } from "../assets";
+import { carrent, codewars, portfolio } from "@/assets/projects";
 
 export const PROJECTS = [
   {
