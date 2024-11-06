@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { github } from "../assets";
-import { projects } from "../constants";
 import { fadeIn } from "@/utils/fadeIn";
 import { textVariant } from "@/utils/textVariant";
+import { PROJECTS } from "@/constants/projects";
 
 const ProjectCard = ({
   index,
@@ -82,7 +82,7 @@ export const Works = () => {
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap gap-7">
-        {projects.map((project, index) => (
+        {PROJECTS.map((project, index) => (
           <ProjectCard
             key={`project-${index}`}
             index={index}

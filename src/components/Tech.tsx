@@ -1,10 +1,10 @@
+import { TECHNOLOGIES } from "@/constants/technologies";
 import { BallCanvas } from "./canvas";
-import { technologies } from "../constants";
 
 export const Tech = () => {
   return (
     <div className="flex flex-row flex-wrap justify-center gap-10">
-      {technologies.map((technology) => (
+      {TECHNOLOGIES.map((technology) => (
         <div className="w-28 h-28" key={technology.name}>
           <BallCanvas icon={technology.icon}></BallCanvas>
         </div>

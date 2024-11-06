@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
 
 import { styles } from "../styles";
-import { experiences } from "../constants";
 import { textVariant } from "@/utils/textVariant";
+import { EXPERIENCES } from "@/constants/experiences";
 
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
@@ -56,7 +56,7 @@ export const Experience = () => {
       </motion.div>
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
-          {experiences.map((experience, index) => (
+          {EXPERIENCES.map((experience, index) => (
             <ExperienceCard
               key={index}
               experience={experience}
