@@ -28,6 +28,6 @@
     }
   },
 
-  "include": ["src", "./codegen.ts"],
+  "include": ["src", "vite.config.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
