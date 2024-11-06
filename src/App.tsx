@@ -1,10 +1,10 @@
 import { BrowserRouter } from "react-router-dom";
 import { App as AntdApp } from "antd";
 
-import { Hero, Navbar, StarsCanvas } from "./components";
+import { Hero, Navbar, StarsCanvas } from "@/components";
 
 import { About } from "./components/About";
-import SectionWrapper from "./components/SectionWrapper";
+import { SectionWrapper } from "./components/SectionWrapper";
 import { Contact } from "./components/Contact";
 import { Experience } from "./components/Experience";
 import { Tech } from "./components/Tech";

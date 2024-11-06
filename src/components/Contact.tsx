@@ -4,7 +4,7 @@ import emailjs from "@emailjs/browser";
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
-import { slideIn } from "../utils/motion";
+import { slideIn } from "@/utils/slideIn";
 
 export const Contact = () => {
   const formRef = useRef();
@@ -115,7 +115,6 @@ export const Contact = () => {
           </button>
         </form>
       </motion.div>
-
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
