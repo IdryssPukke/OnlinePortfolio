@@ -4,6 +4,8 @@ import {
     creator,
     web,
     javascript,
+    html,
+    css,
     reactjs,
     tailwind,
     nodejs,
@@ -57,6 +59,14 @@ import {
   
   const technologies = [
     {
+      name: "HTML 5",
+      icon: html,
+    },
+    {
+      name: "CSS 3",
+      icon: css,
+    },
+    {
       name: "Python",
       icon: python,
     },
@@ -105,7 +115,7 @@ import {
   const experiences = [
     {
       title: "Faculty Students Council President",
-      company_name: "WRSS WEAIiIB AGH UST",
+      company_name: "WRSS WEAIiIB AGH",
       icon: wrss,
       iconBg: "#E6DEDD",
       date: "Aug 2021 - Mar 2023",
