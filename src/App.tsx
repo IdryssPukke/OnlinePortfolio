@@ -1,14 +1,16 @@
 import { BrowserRouter } from "react-router-dom";
 import { App as AntdApp } from "antd";
 
-import { Hero, Navbar, StarsCanvas } from "@/components";
+import { StarsCanvas } from "@/components";
 
-import { About } from "./components/About";
-import { SectionWrapper } from "./components/SectionWrapper";
-import { Contact } from "./components/Contact";
-import { Experience } from "./components/Experience";
-import { Tech } from "./components/Tech";
-import { Works } from "./components/Works";
+import { About } from "@/components/About";
+import { SectionWrapper } from "@/components/SectionWrapper";
+import { Contact } from "@/components/Contact";
+import { Experience } from "@/components/Experience";
+import { Tech } from "@/components/Tech";
+import { Works } from "@/components/Works";
+import { Hero } from "./components/Hero";
+import { Navbar } from "./components/Navbar";
 
 const AboutWrapper = SectionWrapper(About, "about");
 const ContactWrapper = SectionWrapper(Contact, "contact");

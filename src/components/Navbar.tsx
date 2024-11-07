@@ -2,10 +2,10 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
-import { logo, menu, close } from "../assets";
 import { NAV_LINKS } from "@/constants/navLinks";
+import { menu, close, logo } from "@/assets/icons";
 
-const Navbar = () => {
+export const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   return (
@@ -74,5 +74,3 @@ const Navbar = () => {
     </nav>
   );
 };
-
-export default Navbar;

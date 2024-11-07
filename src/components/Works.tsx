@@ -2,10 +2,10 @@ import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
 import { fadeIn } from "@/utils/fadeIn";
 import { textVariant } from "@/utils/textVariant";
 import { PROJECTS } from "@/constants/projects";
+import { github } from "@/assets/images";
 
 const ProjectCard = ({
   index,

@@ -15,13 +15,13 @@ export const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {
+  const onFormChange = (e: { target: { name: string; value: string } }) => {
     const { name, value } = e.target;
 
     setForm({ ...form, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const onSubmit = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     setLoading(true);
 
@@ -70,7 +70,7 @@ export const Contact = () => {
 
         <form
           ref={formRef}
-          onSubmit={handleSubmit}
+          onSubmit={onSubmit}
           className="mt-12 flex flex-col gap-8"
         >
           <label className="flex flex-col">
@@ -79,7 +79,7 @@ export const Contact = () => {
               type="text"
               name="name"
               value={form.name}
-              onChange={handleChange}
+              onChange={onFormChange}
               placeholder="What's your good name?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
@@ -90,7 +90,7 @@ export const Contact = () => {
               type="email"
               name="email"
               value={form.email}
-              onChange={handleChange}
+              onChange={onFormChange}
               placeholder="What's your web address?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
@@ -101,12 +101,11 @@ export const Contact = () => {
               rows={7}
               name="message"
               value={form.message}
-              onChange={handleChange}
+              onChange={onFormChange}
               placeholder="What you want to say?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
-
           <button
             type="submit"
             className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
