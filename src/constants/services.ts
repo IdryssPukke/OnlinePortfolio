@@ -6,7 +6,7 @@ export const SERVICES = [
     icon: web,
   },
   {
-    title: "VR Developer",
+    title: "Frontend Specialist",
     icon: mobile,
   },
   {

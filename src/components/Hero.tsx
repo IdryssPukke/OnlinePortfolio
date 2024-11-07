@@ -19,8 +19,8 @@ export const Hero = () => {
             Hi, I'm <span className="text-[#915eff]"> Szymon </span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I am a python programmer, <br className="sm:block hidden"></br>
-            currently working in front-end development and VR.
+            I am a software developer, <br className="sm:block hidden"></br>
+            specialising in Typescript and Python languages.
           </p>
         </div>
       </div>

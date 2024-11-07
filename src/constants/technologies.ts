@@ -1,7 +1,5 @@
 import {
-  css,
   docker,
-  flask,
   git,
   html,
   javascript,
@@ -9,8 +7,7 @@ import {
   nodejs,
   python,
   reactjs,
-  tailwind,
-  threejs,
+  typescript,
   vue,
 } from "@/assets/tech";
 
@@ -18,10 +15,6 @@ export const TECHNOLOGIES = [
   {
     name: "HTML 5",
     icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
   },
   {
     name: "Python",
@@ -32,16 +25,16 @@ export const TECHNOLOGIES = [
     icon: javascript,
   },
   {
-    name: "Vue",
-    icon: vue,
+    name: "Typescript",
+    icon: typescript,
   },
   {
     name: "React JS",
     icon: reactjs,
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    name: "Vue",
+    icon: vue,
   },
   {
     name: "Node JS",
@@ -50,14 +43,6 @@ export const TECHNOLOGIES = [
   {
     name: "Kubernetes",
     icon: kubernetes,
-  },
-  {
-    name: "flask",
-    icon: flask,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
   },
   {
     name: "git",

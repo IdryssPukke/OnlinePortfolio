@@ -11,6 +11,7 @@ import python from "@/assets/tech/python.png";
 import kubernetes from "@/assets/tech/kubernetes.png";
 import vue from "@/assets/tech/vue.jpg";
 import flask from "@/assets/tech/flask.jpg";
+import typescript from "@/assets/tech/typescript.png";
 
 export {
   css,
@@ -26,4 +27,5 @@ export {
   flask,
   kubernetes,
   python,
+  typescript,
 };
