@@ -1,4 +1,4 @@
-import { wrss, nokia } from "../assets";
+import { nokia, wrss } from "@/assets/company";
 
 export const EXPERIENCES = [
   {

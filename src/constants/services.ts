@@ -1,4 +1,4 @@
-import { mobile, backend, creator, web } from "../assets";
+import { backend, creator, mobile, web } from "@/assets/services";
 
 export const SERVICES = [
   {

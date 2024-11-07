@@ -1,18 +1,18 @@
 import {
-  javascript,
-  html,
   css,
-  reactjs,
-  tailwind,
-  nodejs,
-  git,
   docker,
   flask,
-  vue,
-  python,
-  threejs,
+  git,
+  html,
+  javascript,
   kubernetes,
-} from "../assets";
+  nodejs,
+  python,
+  reactjs,
+  tailwind,
+  threejs,
+  vue,
+} from "@/assets/tech";
 
 export const TECHNOLOGIES = [
   {
