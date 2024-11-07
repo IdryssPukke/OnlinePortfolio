@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { NAV_LINKS } from "@/constants/navLinks";
-import { menu, close, logo } from "@/assets/icons";
 
 export const Navbar = () => {
   const [active, setActive] = useState("");
@@ -21,7 +20,11 @@ export const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain"></img>
+          <img
+            src={"src/assets/icons/logo.svg"}
+            alt="logo"
+            className="w-9 h-9 object-contain"
+          ></img>
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
             {" "}
             Szymon Duda &nbsp;{" "}
@@ -44,7 +47,9 @@ export const Navbar = () => {
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <img
-            src={toggle ? close : menu}
+            src={
+              toggle ? "src/assets/icons/close.svg" : "src/assets/icons/menu.svg"
+            }
             alt="menu"
             className="w-[28px] h-[28px] object-contain cursor-pointer"
             onClick={() => setToggle(!toggle)}

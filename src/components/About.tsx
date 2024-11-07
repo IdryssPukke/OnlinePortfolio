@@ -18,20 +18,24 @@ export const About = () => {
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
         <p style={{ textIndent: "20px" }}>
-          I am a skilled programmer with experience in Typescript and Python and
-          knowledge of frameworks such as Vue, React and Three.js. I have also
+          I am a skilled programmer with experience in{" "}
+          <b style={{ color: "wheat" }}>Typescript and Python</b> and knowledge
+          of frameworks such as{" "}
+          <b style={{ color: "wheat" }}>Vue, React and Three.js</b>. I have also
           been working with VR technologies in conjunction with the Unity and
           Unreal environments.
         </p>
         <br />
         <p style={{ textIndent: "20px" }}>
-          Over four years I acquired extensive experience in software
+          Over four years I acquired{" "}
+          <b style={{ color: "wheat" }}>extensive experience </b>in software
           development. During this time, I contributed to a diverse range of
           projects. I am familiar with Vue and React frameworks, which enable me
-          to build cutting-edge user interfaces. I'm a fast learner and keen to
-          develop my skills as a developer in the aforementioned areas. It would
-          be great to hear from you so we can start collaborating on efficient
-          and user-friendly solutions.
+          to build{" "}
+          <b style={{ color: "wheat" }}>cutting-edge user interfaces</b>. I'm a
+          fast learner and keen to develop my skills as a developer in the
+          aforementioned areas. It would be great to hear from you so we can
+          start collaborating on efficient and user-friendly solutions.
         </p>
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
