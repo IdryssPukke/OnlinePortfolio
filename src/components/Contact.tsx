@@ -21,7 +21,7 @@ export const Contact = () => {
     setForm({ ...form, [name]: value });
   };
 
-  const onSubmit = (e: { preventDefault: () => void; }) => {
+  const onSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     setLoading(true);
 
@@ -42,7 +42,6 @@ export const Contact = () => {
         () => {
           setLoading(false);
           alert("Thank you. I will get back to you as soon as posible.");
-
           setForm({
             name: "",
             email: "",
@@ -51,7 +50,7 @@ export const Contact = () => {
         },
         (error) => {
           setLoading(false);
-          console.log(error)
+          console.log("EmailJs Error: ", error);
           alert("Something went wrong. Please try again.");
         }
       );
@@ -68,6 +67,15 @@ export const Contact = () => {
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
+        <h3 style={{ color: "white" }}>
+          My email address: <b>szymon.r.g.duda@gmail.com</b>
+        </h3>
+        <h3 style={{ color: "white" }}>
+          LinkedIn:{" "}
+          <a href="https://www.linkedin.com/in/szymon-r-g-duda" target="_blank">
+            <b>https://www.linkedin.com/in/szymon-r-g-duda</b>
+          </a>
+        </h3>
         <form
           ref={formRef}
           onSubmit={onSubmit}
